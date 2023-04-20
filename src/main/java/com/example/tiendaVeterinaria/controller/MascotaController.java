@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.tiendaVeterinaria.model.Mascota;
 import com.example.tiendaVeterinaria.service.MascotaService;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200/")
 @RestController
 @RequestMapping("/api/mascotas")
 public class MascotaController {

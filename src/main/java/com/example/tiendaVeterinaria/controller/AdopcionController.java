@@ -28,7 +28,7 @@ import com.example.tiendaVeterinaria.service.AdopcionService;
 
 
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200/")
 @RestController
 @RequestMapping("/api/adopciones/")
 public class AdopcionController {

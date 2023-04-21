@@ -15,20 +15,16 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.example.tiendaVeterinaria.model.Adopcion;
-
-
-
+import com.example.tiendaVeterinaria.model.Mascota;
 import com.example.tiendaVeterinaria.repository.AdopcionRepository;
 import com.example.tiendaVeterinaria.repository.mascotaRepository;
-
-import com.example.tiendaVeterinaria.model.Mascota;
 import com.example.tiendaVeterinaria.service.AdopcionService;
 
 
 
-
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/adopciones/")
 public class AdopcionController {
@@ -37,7 +33,7 @@ public class AdopcionController {
     private AdopcionService adopcionService;
     
     @Autowired
-    private  mascotaRepository mascotaRepository;
+    private mascotaRepository  mascotaRepository;
     
     @Autowired
     private  AdopcionRepository adopcionRepository;

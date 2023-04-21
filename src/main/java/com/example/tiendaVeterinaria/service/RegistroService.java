@@ -169,7 +169,7 @@ public class RegistroService implements IRegistroService {
 		helper.setSubject("Confirmación de registro");
 		String htmlContent = "<html><body>" + "<p>Hola " + clienteDireccion.getNombre() + ",</p>"
 				+ "<p>Gracias por registrarte en nuestra aplicación. Para confirmar tu registro, haz clic en el botón a continuación:</p>"
-				+ "<a href='http://localhost:8080/registro/confirmar/" + clienteEntity.getCodigoVerificacion()
+				+ "<a href='http://localhost:8081/registro/confirmar/" + clienteEntity.getCodigoVerificacion()
 				+ "'><button style='background-color: #008CBA; color: white; padding: 10px;'>Confirmar registro</button></a>"
 				+ "<p>Saludos,<br>El equipo de nuestra aplicación</p>" + "</body></html>";
 		helper.setText(htmlContent, true);

@@ -27,7 +27,7 @@ import com.example.tiendaVeterinaria.service.RegistroService;
 import com.example.tiendaVeterinaria.service.UsuarioService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 @RequestMapping("/registro")
 public class RegistroController {
 

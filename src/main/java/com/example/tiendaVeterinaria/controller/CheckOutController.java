@@ -17,7 +17,7 @@ import com.example.tiendaVeterinaria.service.ICheckOutService;
 
 @RestController
 @RequestMapping("/checkout")
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 public class CheckOutController {
 	
 	@Autowired

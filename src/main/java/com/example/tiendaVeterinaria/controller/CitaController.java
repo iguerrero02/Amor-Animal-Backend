@@ -23,9 +23,9 @@ import com.example.tiendaVeterinaria.repository.CitaRepository;
 import com.example.tiendaVeterinaria.repository.ServicioRepository;
 import com.example.tiendaVeterinaria.service.CitaService;
 
-@CrossOrigin(origins = "*/")
+@CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/citas/")
+@RequestMapping("/api/citas")
 public class CitaController {
     
     @Autowired

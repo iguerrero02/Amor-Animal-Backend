@@ -19,7 +19,7 @@ import com.example.tiendaVeterinaria.model.entity.ListaDeseosEntity;
 import com.example.tiendaVeterinaria.service.IListaDeseosService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 @RequestMapping("/listaDeseos")
 public class ListaDeseosController {
 

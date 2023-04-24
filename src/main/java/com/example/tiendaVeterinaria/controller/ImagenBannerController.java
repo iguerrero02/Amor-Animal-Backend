@@ -26,7 +26,7 @@ import com.example.tiendaVeterinaria.model.entity.ImagenBannerEntity;
 import com.example.tiendaVeterinaria.service.IImagenBannerService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 @RequestMapping("/imagenbanner")
 public class ImagenBannerController {
 

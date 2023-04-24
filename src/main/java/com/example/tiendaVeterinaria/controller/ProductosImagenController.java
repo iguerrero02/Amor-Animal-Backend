@@ -28,7 +28,7 @@ import com.example.tiendaVeterinaria.model.entity.ProductosImagenEntity;
 import com.example.tiendaVeterinaria.service.IProductosImagenService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 @RequestMapping("/ProductosImg")
 public class ProductosImagenController {
 	

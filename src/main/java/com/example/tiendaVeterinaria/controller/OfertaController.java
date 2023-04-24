@@ -20,7 +20,7 @@ import com.example.tiendaVeterinaria.model.entity.OfertaEntity;
 import com.example.tiendaVeterinaria.service.IOfertaService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 @RequestMapping("/oferta")
 public class OfertaController {
 

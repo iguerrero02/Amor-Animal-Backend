@@ -25,6 +25,7 @@ public class ImagenBannerService implements IImagenBannerService {
 	
 	@Autowired
 	private IImagenBannerRepository imagenBannerRepository;
+	
 
 	@Override
 	public SingleResponse<List<ImagenBannerEntity>> consultarTodosImagenBanner() {

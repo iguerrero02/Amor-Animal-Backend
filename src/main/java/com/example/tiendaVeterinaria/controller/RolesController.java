@@ -26,7 +26,7 @@ import com.example.tiendaVeterinaria.service.IRolesService;
 @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
 public class RolesController {
 	
-	@Autowired
+	@Autowired(required=false)
 	private IRolesService rolesService;
 
 	

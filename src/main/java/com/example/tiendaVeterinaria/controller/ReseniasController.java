@@ -28,7 +28,7 @@ import com.example.tiendaVeterinaria.service.IReseniaService;
 @RequestMapping("/resenias")
 public class ReseniasController {
 	
-	@Autowired
+	@Autowired(required=false)
 	IReseniaService reseniaService;
 	
 	@PostMapping(path = "/crearResenia", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)

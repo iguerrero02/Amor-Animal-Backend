@@ -16,3 +16,4 @@ public interface IReseniaService {
 	SingleResponse<ReseniaEntity> actualizarResenia(ReseniaEntity resenia);
 	SingleResponse<ReseniaEntity>  borrarResenia(Integer idResenia);
 }
+

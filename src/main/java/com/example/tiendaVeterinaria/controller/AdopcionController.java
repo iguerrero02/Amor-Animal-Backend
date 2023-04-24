@@ -51,15 +51,15 @@ public class AdopcionController {
 
     @PostMapping("")
     public ResponseEntity<Adopcion> save(@RequestBody Adopcion adopcion) {
-        Mascota mascota = adopcion.getMascota();
-        if (mascota != null && mascota.getId_mascota() != null) {
-            Optional<Mascota> optionalMascota = mascotaRepository.findById(mascota.getId_mascota());
-            if (optionalMascota.isPresent()) {
-                adopcion.setMascota(optionalMascota.get());
-            } else {
-                return ResponseEntity.badRequest().build();
-            }
-        }
+       // Mascota mascota = adopcion.getMascota();
+     //   if (mascota != null && mascota.getId_mascota() != null) {
+      //      Optional<Mascota> optionalMascota = mascotaRepository.findById(mascota.getId_mascota());
+       //     if (optionalMascota.isPresent()) {
+          ///     adopcion.setMascota(optionalMascota.get());
+            //} else {
+          //      return ResponseEntity.badRequest().build();
+           // }
+        //}
         Adopcion savedAdopcion = adopcionRepository.save(adopcion);
         return ResponseEntity.ok(savedAdopcion);
     }

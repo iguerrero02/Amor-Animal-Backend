@@ -26,7 +26,7 @@ import com.example.tiendaVeterinaria.service.AdopcionService;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/adopciones/")
+@RequestMapping("/api/adopciones")
 public class AdopcionController {
     
     @Autowired

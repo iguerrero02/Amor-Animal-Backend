@@ -35,6 +35,7 @@ public class AdopcionController {
     @Autowired
     private mascotaRepository  mascotaRepository;
     
+   
     @Autowired
     private  AdopcionRepository adopcionRepository;
     

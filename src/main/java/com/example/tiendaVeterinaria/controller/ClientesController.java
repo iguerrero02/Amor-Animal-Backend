@@ -38,7 +38,7 @@ import com.example.tiendaVeterinaria.service.IClienteService;
 
 @RestController
 @RequestMapping("/clientes")
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 public class ClientesController {
 	
 	@Autowired

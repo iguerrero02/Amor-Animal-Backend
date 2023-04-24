@@ -23,7 +23,7 @@ import com.example.tiendaVeterinaria.model.dto.SingleResponse;
 import com.example.tiendaVeterinaria.model.entity.ReseniaEntity;
 import com.example.tiendaVeterinaria.service.IReseniaService;
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 @RestController
 @RequestMapping("/resenias")
 public class ReseniasController {

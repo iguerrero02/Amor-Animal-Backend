@@ -22,7 +22,7 @@ import com.example.tiendaVeterinaria.model.entity.MaterialesEntity;
 import com.example.tiendaVeterinaria.service.IMaterialesService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = {"enctype", "Authorization"})
+@CrossOrigin(origins = "*", allowedHeaders = {"enctype", "Authorization"})
 @RequestMapping("/Materiales")
 public class MaterialesController {
 	
